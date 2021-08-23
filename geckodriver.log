@@ -1,0 +1,126 @@
+1629660671689	geckodriver	INFO	Listening on 127.0.0.1:57695
+1629660671693	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJI5Ycd"
+1629660672057	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJI5Ycd/search.json.mozlz4", (void 0)))
+1629660673790	Marionette	INFO	Listening on port 35843
+1629660673825	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.js:918:3
+
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+1629660718415	geckodriver	INFO	Listening on 127.0.0.1:38489
+1629660718420	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileontaF4"
+1629660718743	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileontaF4/search.json.mozlz4", (void 0)))
+1629660720442	Marionette	INFO	Listening on port 34227
+1629660720543	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1629660723088	Marionette	INFO	Stopped listening on port 35843
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1629660728166	geckodriver	INFO	Listening on 127.0.0.1:58943
+1629660728170	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerGFoC0"
+1629660728475	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerGFoC0/search.json.mozlz4", (void 0)))
+1629660730047	Marionette	INFO	Listening on port 33065
+1629660730115	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GFX1]: Attempting to post to an invalid Compositor Thread
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390076,name=PContent::Msg_DestroyBrowsingContextGroup) Channel error: cannot send/recv
+
+JavaScript error: resource:///modules/sessionstore/SessionStore.jsm, line 2047: TypeError: subject.QueryInterface is not a function
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1629660739142	geckodriver	INFO	Listening on 127.0.0.1:42721
+1629660739148	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDcgteH"
+1629660739514	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDcgteH/search.json.mozlz4", (void 0)))
+1629660741372	Marionette	INFO	Listening on port 46829
+1629660741490	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1629660746154	Marionette	INFO	Stopped listening on port 34227
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1629660747159	Marionette	INFO	Stopped listening on port 33065
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390142,name=PContent::Msg_CommitBrowsingContextTransaction) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+Hit MOZ_CRASH([unhandlable oom] EmitterScope::searchAndCache) at /builddir/build/BUILD/firefox-91.0/js/src/vm/JSContext.cpp:1213
+#01: ???[/usr/lib64/firefox/libxul.so +0x2873b3c]
+#02: ???[/usr/lib64/firefox/libxul.so +0x292f61e]
+#03: ???[/usr/lib64/firefox/libxul.so +0x2c91db6]
+#04: ???[/usr/lib64/firefox/libxul.so +0x2c86870]
+#05: ???[/usr/lib64/firefox/libxul.so +0x2c89b20]
+#06: ???[/usr/lib64/firefox/libxul.so +0x2c893e4]
+#07: ???[/usr/lib64/firefox/libxul.so +0x2c869c6]
+#08: ???[/usr/lib64/firefox/libxul.so +0x2c8cea7]
+#09: ???[/usr/lib64/firefox/libxul.so +0x2c86a6b]
+#10: ???[/usr/lib64/firefox/libxul.so +0x2c86a8d]
+#11: ???[/usr/lib64/firefox/libxul.so +0x2c87db1]
+#12: ???[/usr/lib64/firefox/libxul.so +0x2c86a5b]
+#13: ???[/usr/lib64/firefox/libxul.so +0x2c8c92a]
+#14: ???[/usr/lib64/firefox/libxul.so +0x2c86c85]
+#15: ???[/usr/lib64/firefox/libxul.so +0x2c86a8d]
+#16: ???[/usr/lib64/firefox/libxul.so +0x2c87e68]
+#17: ???[/usr/lib64/firefox/libxul.so +0x2c86a5b]
+#18: ???[/usr/lib64/firefox/libxul.so +0x3cb72c7]
+#19: ???[/usr/lib64/firefox/libxul.so +0x2c87ec6]
+#20: ???[/usr/lib64/firefox/libxul.so +0x2c86a5b]
+#21: ???[/usr/lib64/firefox/libxul.so +0x2c86a8d]
+#22: ???[/usr/lib64/firefox/libxul.so +0x2c87e68]
+#23: ???[/usr/lib64/firefox/libxul.so +0x2c86a5b]
+#24: ???[/usr/lib64/firefox/libxul.so +0x2c874f6]
+#25: ???[/usr/lib64/firefox/libxul.so +0x3cbb8a7]
+#26: ???[/usr/lib64/firefox/libxul.so +0x3cbb437]
+#27: ???[/usr/lib64/firefox/libxul.so +0x2c5bf76]
+#28: ???[/usr/lib64/firefox/libxul.so +0x3b93483]
+#29: ???[/usr/lib64/firefox/libxul.so +0x2c5beca]
+#30: ???[/usr/lib64/firefox/libxul.so +0x2c3205e]
+#31: ???[/usr/lib64/firefox/libxul.so +0x2c2a14b]
+#32: ???[/usr/lib64/firefox/libxul.so +0x2c34e0f]
+#33: ???[/usr/lib64/firefox/libxul.so +0x2c36217]
+#34: ???[/usr/lib64/firefox/libxul.so +0x2c46a42]
+#35: ???[/usr/lib64/firefox/libxul.so +0x32e3b7f]
+#36: ???[/usr/lib64/firefox/libxul.so +0x3210331]
+#37: ???[/usr/lib64/firefox/libxul.so +0x3678c88]
+#38: ???[/usr/lib64/firefox/libxul.so +0x2fdbf2c]
+#39: ???[/usr/lib64/firefox/libxul.so +0x2f3d343]
+#40: ???[/usr/lib64/firefox/libxul.so +0x2b2e69f]
+#41: ???[/usr/lib64/firefox/libxul.so +0x2b2e375]
+#42: ???[/usr/lib64/firefox/libxul.so +0x2b11a97]
+#43: ???[/usr/lib64/firefox/libxul.so +0x2b11468]
+#44: ???[/usr/lib64/firefox/libxul.so +0x2d6cd96]
+#45: ???[/usr/lib64/firefox/libxul.so +0x2b108a4]
+#46: ???[/usr/lib64/firefox/libxul.so +0x2b0ff20]
+#47: ???[/usr/lib64/firefox/libxul.so +0x2b2e16a]
+#48: ???[/usr/lib64/firefox/libxul.so +0x2ee54cc]
+#49: ???[/usr/lib64/firefox/libxul.so +0x373e9fd]
+#50: ???[/usr/lib64/firefox/libxul.so +0x3b1c08b]
+#51: ???[/usr/lib64/firefox/libxul.so +0x2ee54cc]
+#52: ???[/usr/lib64/firefox/libxul.so +0x3b1bdc0]
+#53: ???[/usr/lib64/firefox/firefox +0x5249f]
+#54: ???[/usr/lib64/firefox/firefox +0x43c25]
+#55: __libc_start_main[/lib64/libc.so.6 +0x27b75]
+#56: _start[/usr/lib64/firefox/firefox +0x520ae]
+#57: ??? (???:???)
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"SessionStore: flushing all windows","state":{"total":1,"current":0},"filename":"resource:///modules/sessionstore/SessionStore.jsm","lineNumber":2026,"stack":["resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplicationGranted:2026","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:960","resource:///modules/ContentCrashHandlers.jsm:observe:177"]}] Barrier: quit-application-granted
+JavaScript error: resource:///modules/sessionstore/SessionStore.jsm, line 2047: TypeError: subject.QueryInterface is not a function
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1629660934549	Marionette	INFO	Stopped listening on port 46829
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
