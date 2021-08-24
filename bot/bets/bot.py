@@ -23,8 +23,10 @@ class Bot(webdriver.Chrome):
         self.perform_login()
 
 
-    def get_widget(self, selector, type_selector=By.CSS_SELECTOR):
-        return WebDriverWait(self, self.base_delay).until(
+    def get_widget(self, selector, type_selector=By.CSS_SELECTOR, time=None):
+        delay = time or self.base_delay
+
+        return WebDriverWait(self, delay).until(
             EC.presence_of_element_located((type_selector, selector))
         )
 
@@ -47,6 +49,7 @@ class Bot(webdriver.Chrome):
             password_input.send_keys(PASSWORD)
 
         login_button = self.get_widget(".lms-StandardLogin_LoginButtonText").click()
+        time.sleep(10)
         self.dispenser_messages_document_verification()
 
 
@@ -64,7 +67,7 @@ class Bot(webdriver.Chrome):
             self.get_widget(CLOSE_MESSAGES).click()
         except:
             pass
-
+ 
 
     def watch_api(self):
         while True:
@@ -85,8 +88,8 @@ class Bot(webdriver.Chrome):
 
 
     def make_entrada(self, div_input, input, valor):
-        self.get_widget(div_input).click()
-        input_1 = self.get_widget(input)
+        self.get_widget(div_input, time=1).click()
+        input_1 = self.get_widget(input, time=1)
         input_1.send_keys(f"{valor}")
 
 
@@ -94,21 +97,26 @@ class Bot(webdriver.Chrome):
         ids = []
 
         for entrada in entradas:
-            url = entrada['link']
-            valor = entrada['valor'] * (30 / 100)
-            self.get(url)
+            try:
+                url = entrada['link']
+                valor = entrada['valor'] * (30 / 100)
 
-            self.dispenser_messages_document_verification()
-            
-            self.get_widget(TIME_ONE).click()
-            self.get_widget(TIME_TWO).click()
-            self.get_widget(CARDENETA).click()
+                print(f"Iniciando a {valor:.2f} R$ nova entrada: {url}")
 
-            self.make_entrada(DIV_INPUT_ONE, INPUT_ONE, valor)
-            self.make_entrada(DIV_INPUT_TWO, INPUT_TWO, valor)
+                self.dispenser_messages_document_verification()
+                self.get(url)
 
-            self.get_widget(FAZER_APOSTA).click()
+                self.get_widget(TIME_ONE).click()
+                self.get_widget(TIME_TWO, time=3).click()
+                self.get_widget(CARDENETA, time=3).click()
 
-            ids.append(entrada['id'])
+                self.make_entrada(DIV_INPUT_ONE, INPUT_ONE, valor)
+                self.make_entrada(DIV_INPUT_TWO, INPUT_TWO, valor)
 
+                self.get_widget(FAZER_APOSTA, time=2).click()
+
+                ids.append(entrada['id'])
+            except:
+                self.get(BASE_URL)
+                
         self.update_entradas(ids)
